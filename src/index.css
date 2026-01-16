@@ -6,47 +6,48 @@
 
 @layer base {
   :root {
-    --background: 320 60% 96%;
-    --foreground: 280 40% 20%;
+    --background: 268 40% 96%;
+    --foreground: 261 70% 20%;
 
-    --card: 320 50% 98%;
-    --card-foreground: 280 40% 20%;
+    --card: 270 50% 98%;
+    --card-foreground: 261 70% 20%;
 
-    --popover: 320 50% 98%;
-    --popover-foreground: 280 40% 20%;
+    --popover: 270 50% 98%;
+    --popover-foreground: 261 70% 20%;
 
-    --primary: 320 70% 65%;
+    --primary: 261 82% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 280 50% 75%;
-    --secondary-foreground: 280 40% 20%;
+    --secondary: 273 72% 39%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 320 30% 90%;
-    --muted-foreground: 280 20% 50%;
+    --muted: 268 30% 90%;
+    --muted-foreground: 261 40% 45%;
 
-    --accent: 280 60% 70%;
+    --accent: 273 72% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 320 40% 85%;
-    --input: 320 40% 85%;
-    --ring: 320 70% 65%;
+    --border: 268 40% 85%;
+    --input: 268 40% 85%;
+    --ring: 261 82% 35%;
 
     --radius: 1rem;
 
-    /* Custom kawaii colors */
-    --kawaii-pink: 340 80% 75%;
-    --kawaii-purple: 280 60% 65%;
-    --kawaii-lavender: 270 40% 85%;
-    --kawaii-soft-pink: 350 70% 92%;
-    --kawaii-glow: 320 70% 80%;
+    /* Custom kawaii colors - deep purple theme */
+    --kawaii-pink: 285 70% 65%;
+    --kawaii-purple: 261 82% 35%;
+    --kawaii-purple-light: 273 72% 50%;
+    --kawaii-lavender: 270 50% 80%;
+    --kawaii-soft-pink: 280 60% 90%;
+    --kawaii-glow: 273 72% 60%;
     
     /* Gradients */
-    --gradient-main: linear-gradient(135deg, hsl(340 80% 75% / 0.8), hsl(280 60% 65% / 0.8));
-    --gradient-card: linear-gradient(145deg, hsl(320 50% 98% / 0.95), hsl(280 40% 95% / 0.9));
-    --gradient-sparkle: radial-gradient(circle, hsl(320 70% 80% / 0.3) 0%, transparent 70%);
+    --gradient-main: linear-gradient(135deg, hsl(261 82% 35% / 0.8), hsl(273 72% 39% / 0.8));
+    --gradient-card: linear-gradient(145deg, hsl(270 50% 98% / 0.95), hsl(268 40% 95% / 0.9));
+    --gradient-sparkle: radial-gradient(circle, hsl(273 72% 60% / 0.3) 0%, transparent 70%);
   }
 
   .dark {
