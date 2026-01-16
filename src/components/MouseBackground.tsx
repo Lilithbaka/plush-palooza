@@ -25,11 +25,11 @@ const MouseBackground = () => {
           background: `
             radial-gradient(
               circle at ${mousePosition.x}% ${mousePosition.y}%,
-              hsl(340 80% 85% / 0.6) 0%,
-              hsl(320 70% 80% / 0.4) 25%,
-              hsl(280 60% 75% / 0.5) 50%,
-              hsl(270 50% 85% / 0.4) 75%,
-              hsl(320 60% 90% / 0.3) 100%
+              hsl(273 72% 70% / 0.5) 0%,
+              hsl(261 82% 55% / 0.4) 25%,
+              hsl(268 60% 60% / 0.4) 50%,
+              hsl(270 50% 80% / 0.3) 75%,
+              hsl(268 40% 92% / 0.5) 100%
             )
           `,
         }}
@@ -62,7 +62,7 @@ const MouseBackground = () => {
       <motion.div
         className="absolute w-96 h-96 rounded-full"
         style={{
-          background: "radial-gradient(circle, hsl(340 80% 80% / 0.2) 0%, transparent 70%)",
+          background: "radial-gradient(circle, hsl(273 72% 60% / 0.25) 0%, transparent 70%)",
           left: `${mousePosition.x - 10}%`,
           top: `${mousePosition.y - 10}%`,
         }}
