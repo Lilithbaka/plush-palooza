@@ -2,95 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Comfortaa:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 320 60% 96%;
+    --foreground: 280 40% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 320 50% 98%;
+    --card-foreground: 280 40% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 320 50% 98%;
+    --popover-foreground: 280 40% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 320 70% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 280 50% 75%;
+    --secondary-foreground: 280 40% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 320 30% 90%;
+    --muted-foreground: 280 20% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 60% 70%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 320 40% 85%;
+    --input: 320 40% 85%;
+    --ring: 320 70% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom kawaii colors */
+    --kawaii-pink: 340 80% 75%;
+    --kawaii-purple: 280 60% 65%;
+    --kawaii-lavender: 270 40% 85%;
+    --kawaii-soft-pink: 350 70% 92%;
+    --kawaii-glow: 320 70% 80%;
+    
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, hsl(340 80% 75% / 0.8), hsl(280 60% 65% / 0.8));
+    --gradient-card: linear-gradient(145deg, hsl(320 50% 98% / 0.95), hsl(280 40% 95% / 0.9));
+    --gradient-sparkle: radial-gradient(circle, hsl(320 70% 80% / 0.3) 0%, transparent 70%);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 280 50% 8%;
+    --foreground: 320 60% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 280 40% 12%;
+    --card-foreground: 320 60% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 280 40% 12%;
+    --popover-foreground: 320 60% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 320 70% 60%;
+    --primary-foreground: 280 40% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 280 40% 25%;
+    --secondary-foreground: 320 60% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 280 30% 20%;
+    --muted-foreground: 320 30% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 280 50% 35%;
+    --accent-foreground: 320 60% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 280 30% 25%;
+    --input: 280 30% 25%;
+    --ring: 320 70% 60%;
   }
 }
 
@@ -100,6 +86,112 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-quicksand;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .font-comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-card/80 border border-border/50 shadow-lg;
+    background: var(--gradient-card);
+  }
+
+  .kawaii-glow {
+    box-shadow: 0 0 30px hsl(var(--kawaii-glow) / 0.4),
+                0 0 60px hsl(var(--kawaii-pink) / 0.2);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--kawaii-pink)), hsl(var(--kawaii-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .sparkle-bg {
+    background-image: var(--gradient-sparkle);
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+  }
+
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(-2deg);
+    }
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes walk-across {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(calc(100vw + 150px));
+    }
+  }
+
+  @keyframes bounce-walk {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 5s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .animate-walk {
+    animation: walk-across 20s linear infinite;
+  }
+
+  .animate-bounce-walk {
+    animation: bounce-walk 0.5s ease-in-out infinite;
+  }
+
+  /* Sparkle dots */
+  .sparkle-dot {
+    @apply absolute rounded-full bg-white/60;
+    animation: sparkle 2s ease-in-out infinite;
   }
 }
